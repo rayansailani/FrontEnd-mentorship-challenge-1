@@ -28,6 +28,11 @@ body {
   padding: 8%;
   text-align: center;
 }
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .heading {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
@@ -63,7 +68,7 @@ p {
 .plan-box-left p {
   color: hsl(224, 23%, 55%);
 }
-.plan-box-left image {
+.plan-box-left img {
   margin-left: 10px;
 }
 .plan-box > a {
@@ -98,9 +103,13 @@ p {
   color: hsl(223, 47%, 23%);
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 351px) {
+  body {
+    /* overflow-y: auto; */
+    margin: 10px;
+  }
   .card {
-    margin: 12px;
+    margin: 8px;
   }
   body {
     font-size: 12px;
@@ -109,13 +118,19 @@ p {
     font-size: 14px;
   }
   .plan-box > a {
-    margin-right: 10px;
+    margin-right: 4px;
+  }
+  .plan-box img {
+    margin-left: 4px;
   }
   .plan-box-left p {
     margin: 2px 8px 8px 16px;
   }
   .plan-box-left h5 {
     margin: 10px 8px 6px 16px;
+  }
+  .attribution {
+    display: none;
   }
 }
 .attribution {
