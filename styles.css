@@ -118,3 +118,7 @@ p {
     margin: 10px 8px 6px 16px;
   }
 }
+.attribution {
+  position: fixed;
+  bottom: 10px;
+}
