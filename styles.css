@@ -1,0 +1,118 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  overflow-y: hidden;
+}
+
+.card {
+  background: white;
+  width: 450px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.text-content {
+  padding: 8%;
+  text-align: center;
+}
+.heading {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0;
+}
+.subtitle {
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  display: flex;
+  padding: 12px 14px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 26px 0px 26px 0;
+}
+.plan-box-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.plan-box-left h5,
+p {
+  margin: 12px 8px 8px 16px;
+}
+.plan-box-left h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.plan-box-left p {
+  color: hsl(224, 23%, 55%);
+}
+.plan-box-left image {
+  margin-left: 10px;
+}
+.plan-box > a {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  /* color: red; */
+  margin-right: 18px;
+}
+.plan-box > a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.proceed-btn {
+  display: block;
+  background: #382ae1;
+  padding: 12px 8px 12px 8px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 12px;
+}
+.proceed-btn:hover {
+  background: hsl(225, 100%, 94%);
+}
+.cancel-btn {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 350px) {
+  .card {
+    margin: 12px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .plan-box-left h5 {
+    font-size: 14px;
+  }
+  .plan-box > a {
+    margin-right: 10px;
+  }
+  .plan-box-left p {
+    margin: 2px 8px 8px 16px;
+  }
+  .plan-box-left h5 {
+    margin: 10px 8px 6px 16px;
+  }
+}
