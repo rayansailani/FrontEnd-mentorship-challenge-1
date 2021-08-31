@@ -5,7 +5,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-image: url(images/pattern-background-desktop.svg);
+  background-image: url("images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: hsl(225, 100%, 94%);
@@ -19,9 +19,10 @@ body {
 
 .card {
   background: white;
-  width: 450px;
+  width: 360px;
   overflow: hidden;
   border-radius: 24px;
+  box-shadow: 0 4px 18px 0 hsl(224, 23%, 55%);
 }
 .text-content {
   padding: 8%;
@@ -84,6 +85,7 @@ p {
   text-decoration: none;
   color: white;
   margin-bottom: 12px;
+  box-shadow: 0px 8px 4px hsl(225, 100%, 98%);
 }
 .proceed-btn:hover {
   background: hsl(225, 100%, 94%);
